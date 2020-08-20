@@ -1,3 +1,6 @@
+## 4:
+#### Added isfolder()
+
 ## 3:
 #### IT'S NOT A PHASE MOM!
 
