@@ -6,3 +6,6 @@ isfile = function(File)
 		return true	
 	end
 end
+test = function()
+	return nil
+end
