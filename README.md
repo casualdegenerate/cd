@@ -21,6 +21,21 @@ end
 
 # Experimental
 
+## is_cd_caller()
+\<Boolean\> is_cd_caller(\<void\>)
+
+### Description
+Returns true if you are using this API. It's a way to check if you have the API and working!
+
+#### Example
+```lua
+if is_cd_caller() then
+	print("Found API!")
+else
+	print("Did Not Find API?","Call 586141923048161291 for help.")
+end
+```
+
 ## test()
 \<nil\> isfile(\<void\>)
 
