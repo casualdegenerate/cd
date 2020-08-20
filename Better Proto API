@@ -14,3 +14,12 @@ end
 getgenv().is_cd_caller = function()
 	return true
 end
+
+getgenv().isfolder = function(Folder)
+	local list = list_directory(Folder)
+	if #list > 0 then
+		return true
+	else
+		return false
+	end
+end
