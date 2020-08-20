@@ -1,36 +1,8 @@
-cd={}
-cd.isfile = {
-	Name = "isfile";
-	Description = "This will tell you if a file exist or not. Input(File) Output Boolean";
-	Example = (
-[[if cd.isfile.Code("Chat.txt") then
-	print("File Exist") 
-else 
-	print("File does not exist","Creating file!") 
-	writefile("Chat.txt") 
-end]]
-	);
-	Code = function(File)
-		local work,err = pcall(readfile, File)
-		if not work then
-			return false
-		else
-			return true	
-		end
+isfile = function(File)
+	local work,err = pcall(readfile, File)
+	if not work then
+		return false
+	else
+		return true	
 	end
-}
-
-
-
-
-for _,v in pairs(cd) do
-	printoutput(
-		v.Name
-	)
-	printoutput(
-		v.Description
-	)
-	printoutput(
-		v.Example
-	)
 end
