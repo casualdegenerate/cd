@@ -29,7 +29,7 @@ Returns true if you are using this API. It's a way to check if you have the API 
 
 #### Example
 ```lua
-if is_cd_caller() then
+if is_cd_caller then
 	print("Found API!")
 else
 	print("Did Not Find API?","Call 586141923048161291 for help.")
