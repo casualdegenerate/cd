@@ -19,6 +19,21 @@ else
 end
 ```
 
+## isfolder()
+\<Boolean\> isfolder(\<string\> directory)
+
+### Description
+Will return a true or false statement on if the folder exist or not. (Note: The way I wrote isfolder in the script makes it a little bit wack, but I will update it to be better, I promise :))
+
+#### Example
+```lua
+if isfolder("cd") then
+	print("Folder Exist")
+else
+	print("Folder Does Not Exist")
+end
+```
+
 # Experimental
 
 ## is_cd_caller()
