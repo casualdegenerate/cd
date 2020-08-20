@@ -1,6 +1,6 @@
 x=game:HttpGet("https://raw.githubusercontent.com/J-61042/cd/master/Self Updater")
 h = function()
-	getgenv().isfile = function(File)
+	isfile = function(File)
 		local work,err = pcall(readfile, File) --Proto will error if the file you try to read does not exist. Making this easy for me to do a pcall check on.
 		if not work then
 			return false
@@ -9,11 +9,11 @@ h = function()
 		end
 	end
 	
-	getgenv().test = function()
+	test = function()
 		return nil
 	end
 	
-	getgenv().is_cd_caller = function()
+	is_cd_caller = function()
 		return true
 	end
 	
