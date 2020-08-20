@@ -1,46 +1,36 @@
 x=game:HttpGet("https://raw.githubusercontent.com/J-61042/cd/master/Self Updater")
+h = function()
+	isfile = function(File)
+		local work,err = pcall(readfile, File) --Proto will error if the file you try to read does not exist. Making this easy for me to do a pcall check on.
+		if not work then
+			return false
+		else
+			return true	
+		end
+	end
+	
+	test = function()
+		return nil
+	end
+	
+	is_cd_caller = function()
+		return true
+	end
+	
+	if is_cd_caller then
+		print("Found API!")
+	else
+		print("Did Not Find API?","Call 586141923048161291 for help.")
+	end	
+	
+	
+end
 if x:sub(x,1,x:len()) ~= "1" then
 	if ask_prompt("cd/","Hey, there is an update, would you like to get it?","Yes","No") == 1 then
 		writefile("Better Proto API.lua",game:HttpGet("https://raw.githubusercontent.com/J-61042/cd/master/Better Proto API"))
 	else
-		isfile = function(File)
-			local work,err = pcall(readfile, File) --Proto will error if the file you try to read does not exist. Making this easy for me to do a pcall check on.
-			if not work then
-				return false
-			else
-				return true	
-			end
-		end
-		test = function()
-			return nil
-		end
-		is_cd_caller = function()
-			return true
-		end
-		if is_cd_caller then
-			print("Found API!")
-		else
-			print("Did Not Find API?","Call 586141923048161291 for help.")
-		end
+		h()
 	end
 else
-	isfile = function(File)
-			local work,err = pcall(readfile, File) --Proto will error if the file you try to read does not exist. Making this easy for me to do a pcall check on.
-			if not work then
-				return false
-			else
-				return true	
-			end
-		end
-		test = function()
-			return nil
-		end
-		is_cd_caller = function()
-			return true
-		end
-		if is_cd_caller then
-			print("Found API!")
-		else
-			print("Did Not Find API?","Call 586141923048161291 for help.")
-		end
+	h()
 end
