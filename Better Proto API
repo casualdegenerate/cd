@@ -1,5 +1,5 @@
 isfile = function(File)
-	local work,err = pcall(readfile, File)
+	local work,err = pcall(readfile, File) --Proto will error if the file you try to read does not exist. Making this easy for me to do a pcall check on.
 	if not work then
 		return false
 	else
@@ -8,4 +8,7 @@ isfile = function(File)
 end
 test = function()
 	return nil
+end
+is_cd_caller = function()
+	return true
 end
