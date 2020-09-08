@@ -33,6 +33,6 @@ getgenv().fchat = function(input)
 end
 
 getgenv().tchat = function(input)
-	RChat(input)
-	FChat(input)
+	rchat(input)
+	fchat(input)
 end
