@@ -23,3 +23,16 @@ getgenv().isfolder = function(Folder)
 		return false
 	end
 end
+
+getgenv().RChat = function(input)
+	game:GetService("Players"):Chat(input)
+end
+
+getgenv().FChat = function(input)
+	game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(input,"All")
+end
+
+getgenv().TChat = function(input)
+	RChat(input)
+	FChat(input)
+end
