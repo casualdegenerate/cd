@@ -4,7 +4,7 @@
 # File
 
 ## ISFILE
-\<Boolean\> isfile(\<string\> pathToFile)
+\<boolean\> isfile(\<string\> pathToFile)
 
 ### Description
 Will return a true or false statement on if the file exist or not.
@@ -20,7 +20,7 @@ end
 ```
 
 ## ISFOLDER
-\<Boolean\> isfolder(\<string\> pathToDirectory)
+\<boolean\> isfolder(\<string\> pathToDirectory)
 
 ### Description
 Will return a true or false statement on if the folder exist or not. (Note: The way I wrote isfolder in the script makes it a little bit wack, but I will update it to be better, I promise :))
@@ -69,10 +69,23 @@ Will use both rchat and fchat so if you want to use both the real chat and fake 
 tchat("Hello.") 
 ```
 
+# Text
+
+## STRINGTOBYTE
+\<string\> stringtobyte(\<string\>)
+
+### Description
+Will turn a bunch of characters in a string like "Test" to "\84\101\115\116" so you don't need to make a function yourself to make a large string into a byte if needed.
+
+#### Example
+```lua
+print(stringtobyte("hhhh, imagine really using this like, lmao?")
+```
+
 # Experimental
 
 ## IS_CD_CALLER
-\<Boolean\> is_cd_caller(\<void\>)
+\<boolean\> is_cd_caller(\<void\>)
 
 ### Description
 Returns true if you are using this API. It's a way to check if you have the API and working!
