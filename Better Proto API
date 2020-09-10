@@ -37,11 +37,10 @@ getgenv().tchat = function(input)
 	fchat(input)
 end
 
-getgenv().stringtobyte = function(string)
-	local text = "Testing. Testing. Yes."
+getgenv().stringtobyte = function(text)
 	local output = ""
 	for i=1,#text do
-		output = output.."\\"..text:sub(i,i):byte()
+		output = output.."\\"..text:sub(i):byte()
 	end
 	return output
 end
