@@ -44,3 +44,11 @@ getgenv().stringtobyte = function(text)
 	end
 	return output
 end
+
+getgenv().isfriends = function(id1,id2)
+	if string.find(game:HttpGet("https://friends.roblox.com/v1/users/"..id1.."/friends"),id2) ~= nil then
+		return true
+	else
+		return false --haha nil goes cd/9BzHJuvr0zemr:5: attempt to concatenate nil with nil
+	end
+end
