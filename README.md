@@ -119,5 +119,8 @@ else
 end
 ```
 
+# Undocumented
+countfriends
+
 # h
 msg me if you have any useful functions that would just make life easier to me so I can add them
