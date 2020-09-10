@@ -84,23 +84,21 @@ print(stringtobyte("hhhh, imagine really using this like, lmao?")
 
 # Data
 
-## ISFRIENDS
-\<boolean\> isfriends(\<number\>,\<number2\>)
+## ~~ISFRIENDS~~ Depricated, Use (https://developer.roblox.com/en-us/api-reference/function/Player/IsFriendsWith)
+~~\<boolean\> isfriends(\<number\>,\<number2\>)~~
 
-### Description
-Will return true if the too player IDs are friends with each other. Used to collect mass data on players for the fun of it or to use it as esp to tell straight away if two players are friends and are teaming or something along those lines if that is what you intead for it.
+### ~~Description~~
+~~Will return true if the too player IDs are friends with each other. Used to collect mass data on players for the fun of it or to use it as esp to tell straight away if two players are friends and are teaming or something along those lines if that is what you intead for it.~~
 
-#### Example
-```lua
-game:GetService("Players").PlayerAdded:connect(function(plr)
-	for _,v in pairs(game:GetService("Players"):GetPlayers()) do wait(1) --Don't spam too many request.
-		if isfriends(v.UserId,plr.UserId) then
-			print(plr.Name,"Is friends with",v.Name)
-		end
-	end
-end)
-```
-Will work aslong as you don't HTTP429. Okay?
+#### ~~Example~~
+~~game:GetService("Players").PlayerAdded:connect(function(plr)~~
+	~~for _,v in pairs(game:GetService("Players"):GetPlayers()) do wait(1) --Don't spam too many request.~~
+		~~if isfriends(v.UserId,plr.UserId) then~~
+			~~print(plr.Name,"Is friends with",v.Name)~~
+		~~end~~
+	~~end~~
+~~end)~~
+~~Will work aslong as you don't HTTP429. Okay?~~
 
 # Experimental
 
