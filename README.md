@@ -69,7 +69,7 @@ Will use both rchat and fchat so if you want to use both the real chat and fake 
 tchat("Hello.") 
 ```
 
-# Text
+# String
 
 ## STRINGTOBYTE
 \<string\> stringtobyte(\<string\>)
