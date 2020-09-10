@@ -52,3 +52,8 @@ getgenv().isfriends = function(id1,id2)
 		return false --haha nil goes cd/9BzHJuvr0zemr:5: attempt to concatenate nil with nil
 	end
 end
+
+getgenv().countfriends = function(id)
+	local t = game:HttpGet("https://friends.roblox.com/v1/users/"..id.."/friends/count")
+	return t:sub(10,t:len()-1)
+end
