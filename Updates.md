@@ -1,3 +1,6 @@
+## 5:
+#### Forgot a few, cuz memory loss, I added a few functions such as stringtobyte, and other forgetable things.
+
 ## 4:
 #### Added isfolder()
 
