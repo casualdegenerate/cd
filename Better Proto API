@@ -57,3 +57,7 @@ getgenv().countfriends = function(id)
 	local t = game:HttpGet("https://friends.roblox.com/v1/users/"..id.."/friends/count")
 	return t:sub(10,t:len()-1)
 end
+
+getgenv().fwait=function()
+	game:GetService("RunService").RenderStepped:Wait()
+end
