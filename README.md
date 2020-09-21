@@ -69,6 +69,32 @@ Will use both rchat and fchat so if you want to use both the real chat and fake 
 tchat("Hello.") 
 ```
 
+## OUTFIT
+\<void\> outfit(\<string\> Directory)
+
+### Description
+Will give the client an outfit that has information writen in file in the directory ("cd/Outfits/$id$.cd")
+
+#### Example
+```lua
+Outfit("550673488") 
+```
+Must have the file itself made first. (You can join my server and ask the bot I made for the module made for you. 7F4uz8h
+```lua
+local outfit = {
+	["Hat"] = {
+		"5099663350",
+		"5355196085",
+		"5355304172",
+		"5372331709",
+	},
+	["Shirt"] = "2746996347",
+	["Pants"] = "5194178265",
+	["Face"] = "0"
+}
+return outfit
+```
+
 # String
 
 ## STRINGTOBYTE
