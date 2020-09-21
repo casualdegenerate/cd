@@ -62,7 +62,7 @@ getgenv().fwait=function()
 	game:GetService("RunService").RenderStepped:Wait()
 end
 
-getgenv().outfit(input)
+getgenv().outfit = function(input)
 	local input = tostring(input)
 	local Outfit = dofile("cd/Outfits/"..input..".cd")
 	for _,v in pairs(Outfit.Hat) do
