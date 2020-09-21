@@ -61,3 +61,14 @@ end
 getgenv().fwait=function()
 	game:GetService("RunService").RenderStepped:Wait()
 end
+
+getgenv().outfit(input)
+	local input = tostring(input)
+	local Outfit = dofile("cd/Outfits/"..input..".cd")
+	for _,v in pairs(Outfit.Hat) do
+		rchat("hat me "..v)
+	end
+	rchat("shirt me "..Outfit.Shirt)
+	rchat("pants me "..Outfit.Pants)
+	rchat("face me "..Outfit.Face)
+end
