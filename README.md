@@ -70,14 +70,14 @@ tchat("Hello.")
 ```
 
 ## OUTFIT
-\<void\> outfit(\<string\> Directory)
+\<void\> outfit(\<string\> fileName w/out file name(it must be .cd))
 
 ### Description
 Will give the client an outfit that has information writen in file in the directory ("cd/Outfits/$id$.cd")
 
 #### Example
 ```lua
-Outfit("550673488") 
+Outfit("550673488") --Notice how it's only the name and not the directory? That's because I pasted my code in here barry. 
 ```
 Must have the file itself made first. (You can join my server and ask the bot I made for the module made for you. 7F4uz8h
 ```lua
