@@ -25,7 +25,9 @@ getgenv().isfolder = function(Folder)
 end
 
 getgenv().rchat = function(input)
-	game:GetService("Players"):Chat(input.." +rc") --This is for me. I have an anti logger so I have an argument to make my scripts work in some games at the end. Sorry if it bothers you! Try to just overwrite this function if you don't like it...
+	getgenv().chatbypass = false
+	game:GetService("Players"):Chat(input) 
+	getgenv().chatbypass = true
 end
 
 getgenv().fchat = function(input)
