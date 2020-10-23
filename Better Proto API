@@ -74,3 +74,11 @@ getgenv().outfit = function(input)
 	rchat("pants me "..Outfit.Pants)
 	rchat("face me "..Outfit.Face)
 end
+
+getgenv().lchat = function(input)
+	game.StarterGui:SetCore("ChatMakeSystemMessage", {
+		TextSize = 12, 
+		Text = input, 
+		Color = Color3.new(.1,1,.1)
+	})
+end
