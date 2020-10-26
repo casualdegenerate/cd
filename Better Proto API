@@ -82,3 +82,7 @@ getgenv().lchat = function(input)
 		Color = Color3.new(.1,1,.1)
 	})
 end
+
+getgenv().fspawn = function(f)
+	coroutine.resume(coroutine.create(f))
+end
