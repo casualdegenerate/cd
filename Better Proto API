@@ -75,11 +75,12 @@ getgenv().outfit = function(input)
 	rchat("face me "..Outfit.Face)
 end
 
-getgenv().lchat = function(input)
+getgenv().lchat = function(input,c)
+	if not c then c = Color3.new(1,1,1) end
 	game.StarterGui:SetCore("ChatMakeSystemMessage", {
 		TextSize = 18, 
 		Text = tostring(input), 
-		Color = Color3.new(.1,1,.1)
+		Color = c
 	})
 end
 
