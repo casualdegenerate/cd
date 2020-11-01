@@ -31,7 +31,7 @@ getgenv().rchat = function(input)
 end
 
 getgenv().fchat = function(input)
-	game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(input,"All")
+	game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents"):WaitForChild("SayMessageRequest"):FireServer(input,"All")
 end
 
 getgenv().tchat = function(input)
