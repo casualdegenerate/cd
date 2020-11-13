@@ -25,9 +25,13 @@ getgenv().isfolder = function(Folder)
 end
 
 getgenv().rchat = function(input)
-	getgenv().chatbypass = false
-	game:GetService("Players"):Chat(input) 
-	getgenv().chatbypass = true
+	if chatbypass then 
+		getgenv().chatbypass = false
+		game:GetService("Players"):Chat(input) 
+		getgenv().chatbypass = true
+	else
+		game:GetService("Players"):Chat(input) 
+	end
 end
 
 getgenv().fchat = function(input)
