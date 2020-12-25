@@ -29,8 +29,10 @@ getgenv().rchat = function(input)
 		getgenv().chatbypass = false
 		game:GetService("Players"):Chat(input) 
 		getgenv().chatbypass = true
-	else
+	elseif _G.owoToggle then
+		_G.owoToggle = false
 		game:GetService("Players"):Chat(input) 
+		_G.owoToggle = true
 	end
 end
 
